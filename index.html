@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+input {
+/*height: 1px; 
+width: 1px; 
+position: absolute;
+top: -100px; 
+left: 0px
+*/
+}
+body {
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>Uji coba fitur copy</h1>
+<input type="text"></input>
+<button>copy</button>
+<script>
+var yay = document.getElementsByTagName("input")[0];
+var owo = document.getElementsByTagName("button")[0];
+// Pilih salah satu di antara tiga ini
+yay.value="F8AsHQw5SDJKTh!!";
+// yay.value = "x5Ks6fxF2je2I9y??";
+// yay.value = "2D9M5DgSsj TFOPx4LN1 4H1EfFO";
+txtnorm="copy";
+owo.addEventListener("click", btcp);
+function btcp() {
+    yay.select();
+    document.execCommand("copy");
+
+    owo.innerHTML = "ypoc";
+    let timer = setTimeout(() => {
+        owo.innerHTML = txtnorm;
+    }, 1000);
+}
+</script>
+</body>
+</html>
